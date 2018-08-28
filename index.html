@@ -1,0 +1,25 @@
+---
+layout: default
+title: Genter - Gaming Blog - Long Beach, California
+---
+
+<section class="contain-post">
+  {% include header.html %}
+  <ul class="post">
+    {% for post in site.posts %}
+    <li class="post__contain">
+      <div class="post__img">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          <img src="{{ site.baseurl }}/{{ post.pic }}" alt="{{ post.title }}">
+        </a>
+      </div>
+      <div class="post__meta">
+        <h3 class="post__title">
+          <a class="blue" href="{{ site.baseurl }}{{ post.url }}">{{ post.header }}</a>
+        </h3>
+        <p class="post__excerpt">{{ post.meta }}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
