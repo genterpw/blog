@@ -3,3 +3,27 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header {
+  height: 76vh;
+  background-color: #da72b0;
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+}
+
+ul li a {
+  color: #fff;
+}

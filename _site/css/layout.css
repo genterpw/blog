@@ -1,3 +1,72 @@
+/* the intro on the home page */
+
+.intro {
+  height: 82%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro__title {
+  margin: 0;
+  color: #FBFFFF;
+  text-transform: uppercase;
+  padding-top: 20px;
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+
+/* nav on the home page */
+
+.nav {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  margin: 0 140px;
+  justify-content: space-between;
+}
+
+.nav__list {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  text-transform: uppercase;
+}
+
+.nav__list-item, .blog-nav__list-item {
+  margin-right: 22px;
+}
+
+/* nav on every blog post */
+
+.blog-nav {
+  padding: 7px 126px;
+  background: #da72b0;
+}
+
+.blog-nav__title {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 36px;
+}
+
+.blog-nav__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.blog-nav__list {
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+/* styles for the content of the post */
+
 .content {
   width: 95%;
   margin: 0 auto;
@@ -21,9 +90,9 @@
 
 .content p {
   line-height: 1.6;
+  color: #555;
   margin: 25px 0;
   font-size: 18px;
-  letter-spacing: -0.063px;
 }
 
 .content img {
@@ -31,24 +100,8 @@
   max-width: 500px;
 }
 
-.title {
+.content__center-image {
   text-align: center;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  margin: 10px 0;
-
-  background-color: #fff;
-  margin: 0;
-  padding: 3px 0;
-
-  font-size: 34px;
-  font-weight: 900;
-}
-
-.title__link {
-  color: #222;
-  text-decoration: none;
 }
 
 .contain-post {
@@ -57,11 +110,10 @@
 }
 
 @media screen and (min-width: 961px) {
-
   .contain-post {
     width: 80%;
   }
-  
+
   .content {
     width: 60%;
   }

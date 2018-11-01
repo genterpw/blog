@@ -1,2 +1,2 @@
-Sitemap: https://planeswalker1.github.io/tasty-grid/sitemap.xml
+Sitemap: https://genterpw.github.io/blog/sitemap.xml
 User-agent: *

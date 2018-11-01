@@ -1,14 +1,13 @@
 ---
 layout: default
-title: Genter - Gaming Blog
-priority: 1.0
-changefreq: weekly
+title: Genter - PC Gaming
+meta: all post about pc gaming
 ---
 
-{% include header.html %}
+{% include nav.html %}
 <main class="main--home">
   <ul class="posts">
-    {% for post in site.tags["mobile"] %}
+    {% for post in site.tags["pc"] %}
     <li class="post">
       <a class="post__link" href="{{ site.baseurl }}{{ post.url }}">
         <div>

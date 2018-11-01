@@ -1,6 +1,26 @@
-<header>
-  <div>
-    <h2>Gaming</h2>
-    <p>A blog related about all things gaming</p>
-  </div>
+<header class="header">
+  <section class="intro">
+    <h2 class="intro__title">Genter</h2>
+  </section>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__list-item">
+        <a href="{{ site.baseurl }}/">home</a>
+      </li>
+      <li class="nav__list-item">
+        <a href="{{ site.baseurl }}/mobile">mobile</a>
+      </li>
+      <li class="nav__list-item">
+        <a href="{{ site.baseurl }}/pc">pc</a>
+      </li>
+    </ul>
+
+    <ul class="nav__list">
+      <li>
+        <a href="https://www.instagram.com/gentergt/">
+          {% include instagram.html %}
+        </a>
+      </li>
+    </ul>
+  </nav>
 </header>

@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- seo -->
-  <meta name="description" content="{% if page.meta %}{{ page.meta }}{% else %}Blog about all free to play cool online and offline games and apps.{% endif %}">
+  <meta name="description" content="{% if page.meta %} {{ page.meta }} - {{ site.title }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:type" content="website">
-  <meta property="og:description" content="{% if page.meta %}{{ page.meta }}{% else %}Blog about all free to play cool online and offline games and apps.{% endif %}">
+  <meta property="og:description" content="{% if page.meta %}{{ page.meta }} - {{ site.title }} {% else %} {{ site.description }} {% endif %}">
   <title>{{ page.title }}</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 </head>
 <body>
-  {% include nav.html %}
   {{ content }}
 </body>
 </html>
